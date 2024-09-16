@@ -51,4 +51,3 @@ Explore the `google-ads-automation` and `seo-content-automation` folders for det
 
 **Disclaimer:** This toolkit is intended to assist with marketing tasks. It's essential to review and refine the AI-generated content to ensure accuracy and brand consistency.
 
-Let me know if you would like any further refinements or additions to this high-level summary! 
