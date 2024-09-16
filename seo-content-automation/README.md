@@ -95,7 +95,7 @@ Once everything is set up, you can run the script to generate optimized product 
 1. Modify the `product_url` variable in the script to the product page URL you want to scrape.
 2. Run the script:
     ```bash
-    python product_optimization.py
+    python seocontentautomation.py
     ```
 
 This will fetch the product details, retrieve keyword ideas from Google Ads, and enhance the description using GPT-4. The final enhanced product details will be printed to the console.
