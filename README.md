@@ -1,90 +1,54 @@
-# rfwel-ai-automation-docs
+# Rfwel-AI-Automation-docs
 This repository offers developers free access to reference materials, tutorials, and code examples for Rfwel's AI automation solutions. 
 
-# Responsive Search Ad Generator
+# AI-Powered Marketing Optimization Toolkit
 
-This project uses python scripts to generate keyword ideas using the Google Ads API from a given URL and creates responsive search ad suggestions, along with an SEO-optimized page title, using OpenAI's GPT-4 API and finally you could push the Responsive Search Ad to Google Ads using Google Ads API endpoint.
+This toolkit leverages artificial intelligence (AI) to optimize two key aspects of your online marketing:
 
-## Features
+1. **Product Details Optimization:** Enhance product descriptions and SEO elements using web scraping, Google Ads keyword suggestions, and GPT-4 AI rewriting.
+2. **Responsive Search Ad Generation:** Create compelling search ads using your website content, Google Ads keyword research, and GPT-4 ad copywriting.
 
-- Fetches content from a provided URL and cleans the HTML.
-- Uses the Google Ads API to generate keyword ideas.
-- Filters out unwanted keywords (e.g., "amazon", "reddit").
-- Uses OpenAI's GPT-4 API to generate responsive search ad suggestions based on the keyword ideas and the cleaned URL content.
+## Solution 1: Product Details Optimization
+
+* Scrapes product information from your webpage.
+* Uses Google Ads API to generate relevant keywords.
+* Employs GPT-4 to rewrite product descriptions, integrating keywords naturally.
+* Outputs optimized titles, meta descriptions, and keywords for improved SEO.
+
+## Solution 2: Responsive Search Ad Generator
+
+* Fetches content from your provided URL.
+* Generates keyword ideas using Google Ads API.
+* Utilizes GPT-4 to craft engaging ad headlines and descriptions.
+* Provides options for broad match, phrase match, and exact match keywords.
+* Can even push ads directly to Google Ads (with proper configuration).
+
+## Benefits
+
+* **Save time and effort:** Automate tedious tasks like keyword research and ad copywriting.
+* **Improve SEO:** Optimize product descriptions and ad targeting for better search visibility.
+* **Boost conversions:** Increase click-through rates and sales with persuasive ad copy.
 
 ## Prerequisites
 
-- Python 3.x
-- Google Ads API credentials
-- OpenAI API key
+* Python 3.x
+* Google Ads API credentials
+* OpenAI API key
+* Required Python libraries (see individual READMEs)
 
-## Installation
+## Installation & Usage
 
-1. Clone this repository or download the script.
-2. Install the required Python libraries:
-    ```bash
-    pip install requests beautifulsoup4 google-ads google-auth
-    ```
+1. Clone the repository: `git clone https://github.com/rfwel01/rfwel-ai-automation-docs.git`
+2. Install dependencies: `pip install -r requirements.txt` (for each solution)
+3. Set up environment variables (refer to individual READMEs)
+4. Run the respective Python scripts, providing the required inputs.
 
-## Environment Variables
+## Get Started
 
-Before running the script, set the following environment variables for authentication:
+Explore the `google-ads-automation` and `seo-content-automation` folders for detailed instructions and code examples. Start optimizing your marketing content today!
 
-- `DEVELOPER_TOKEN`: Your Google Ads developer token.
-- `GCLIENT_ID`: Google client ID for OAuth2 authentication.
-- `CLIENT_SECRET`: Google client secret for OAuth2 authentication.
-- `GCP_REFRESH_TOKEN`: Google refresh token.
-- `ACCOUNT_ID`: Google Ads account ID.
-- `MANAGER_CUSTOMER_ID`: Google Ads manager customer ID.
-- `OPENAI_API_KEY`: OpenAI API key for generating ads with GPT-4.
+**Note:** Remember to replace placeholders like `your-google-client-id` with your actual credentials. Always handle API keys securely.
 
-## Usage
+**Disclaimer:** This toolkit is intended to assist with marketing tasks. It's essential to review and refine the AI-generated content to ensure accuracy and brand consistency.
 
-1. Set up your environment variables:
-    ```bash
-    export DEVELOPER_TOKEN="your_developer_token"
-    export GCLIENT_ID="your_client_id"
-    export CLIENT_SECRET="your_client_secret"
-    export GCP_REFRESH_TOKEN="your_refresh_token"
-    export ACCOUNT_ID="your_account_id"
-    export MANAGER_CUSTOMER_ID="your_manager_customer_id"
-    export OPENAI_API_KEY="your_openai_api_key"
-    ```
-
-2. Run the script:
-    ```bash
-    ai-ads-automation.py
-    ```
-
-3. Input the URL when prompted. The script will:
-   - Fetch and clean the content from the URL.
-   - Generate keyword ideas using the Google Ads API.
-   - Use OpenAI's GPT-4 API to generate responsive search ad suggestions and an SEO-optimized page title.
-
-## Code Overview
-
-### Functions
-
-- **`create_google_ads_client()`**: Initializes and returns a Google Ads API client.
-- **`clean_description(html_content)`**: Cleans HTML content and returns readable text.
-- **`fetch_and_clean_url_content(url)`**: Fetches the URL content and returns cleaned text.
-- **`generate_keyword_ideas(url)`**: Uses the Google Ads API to generate keyword ideas for the provided URL.
-- **`generate_responsive_search_ad(description, api_key, keyword_ideas)`**: Generates responsive search ad suggestions using GPT-4 based on keyword ideas and cleaned content.
-
-### Main Process
-
-- The script first fetches and cleans the HTML content of the provided URL.
-- It then generates keyword ideas using the Google Ads API.
-- Finally, it uses the GPT-4 API to generate responsive search ad content and an SEO-optimized page title.
-
-## Example Output
-
-```bash
-Enter the URL to process: https://example.com
-Generated Keywords:
-Keyword: example keyword 1, Avg Monthly Searches: 1200
-Keyword: example keyword 2, Avg Monthly Searches: 800
-
-Responsive Search Ad Suggestions and Page Title:
-...
-```
+Let me know if you would like any further refinements or additions to this high-level summary! 
