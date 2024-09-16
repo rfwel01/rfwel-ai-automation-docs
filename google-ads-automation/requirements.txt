@@ -1,7 +1,0 @@
- google-ads
- google-auth
- beautifulsoup4
- requests
- sys
- os
- 
