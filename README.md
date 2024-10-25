@@ -51,3 +51,6 @@ Explore the `google-ads-automation` and `seo-content-automation` folders for det
 
 **Disclaimer:** This toolkit is intended to assist with marketing tasks. It's essential to review and refine the AI-generated content to ensure accuracy and brand consistency.
 
+For technical help reach out to: https://ai.rfwel.com/
+For legal services reach out to: https://www.kamathuo.com/ai
+
